@@ -1,8 +1,10 @@
 package com.example.patel.gooogleeprod;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class Phones extends AppCompatActivity {
 
@@ -11,14 +13,19 @@ public class Phones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phones);
 
-        String[] goophones = new String[10];
-        goophones[1] = "Google Pixel XL";
-        goophones[2] = "Google Pixel ";
-        goophones[3] = "Google 6P";
-        goophones[4] = "Google 6";
+        ArrayList<CustomConts> goophones = new ArrayList<>();
+        goophones.add(new CustomConts("Google Pixel XL","$900"));
+        goophones.add(new CustomConts("Google Pixel","$800"));
+        goophones.add(new CustomConts("Google 6P","$700"));
+        goophones.add(new CustomConts("Google 6","$500"));
 
-        Log.v("Phones","Word at 1: " +goophones[1]);
-        Log.v("Phones","Word at 1: " +goophones[3]);
+
+
+        PhoneAdapter adapter = new PhoneAdapter(this, goophones);
+
+        ListView listView = findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
 
     }
 }
