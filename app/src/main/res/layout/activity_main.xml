@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/phones"
+        style="@style/CategoryStyle"
+        android:background="@color/category_numbers"
+        android:text="@string/googlephone"
+        android:onClick="Phoness" />
+
+    <TextView
+        android:id="@+id/services"
+        style="@style/CategoryStyle"
+        android:background="@color/category_family"
+        android:text="@string/services" />
+
+    <TextView
+        android:id="@+id/employees"
+        style="@style/CategoryStyle"
+        android:background="@color/category_colors"
+        android:text="@string/employee" />
+
+    <TextView
+        android:id="@+id/software"
+        style="@style/CategoryStyle"
+        android:background="@color/category_phrases"
+        android:text="@string/software" />
+
+</LinearLayout>

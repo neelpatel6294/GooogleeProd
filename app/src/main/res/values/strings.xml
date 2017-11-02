@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GooogleeProd</string>
+    <string name="googlephone">Phone</string>
+    <string name="services">Services</string>
+    <string name="employee">Employee</string>
+    <string name="software">Software</string>
+
+
+</resources>
